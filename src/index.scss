@@ -1,0 +1,17 @@
+$base-fonts: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+
+[data-font="Vazir"] {
+    &, button {
+        font-family: 'Vazir', $base-fonts;
+    }
+
+    --font-family-sans: 'Vazir', $base-fonts;
+}
+
+[data-font="Shabnam"] {
+    &, button {
+        font-family: 'Shabnam', $base-fonts;
+    }
+
+    --font-family-sans: 'Shabnam', $base-fonts;
+}

@@ -1,0 +1,15 @@
+{
+    "name": "vbadvanced/kirby-persian",
+    "description": "Kirby Persian Extensions",
+    "type": "kirby-plugin",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mohammad Shiran",
+            "email": "vbadvanced@gmail.com"
+        }
+    ],
+    "require": {
+        "getkirby/composer-installer": "^1.1"
+    }
+}
