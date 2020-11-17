@@ -1,5 +1,5 @@
 <?php
-require_once __DIR__ . '/vendor/jdf/jdf.php';
+require_once __DIR__ . '/lib/jdf/jdf.php';
 
 class Helpers {
 

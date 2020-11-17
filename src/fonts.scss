@@ -1,3 +1,6 @@
+@use "sass:meta";
+@import "../node_modules/vazir-font/dist/font-face.css";
+
 $base-fonts: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
 
 [data-font="Vazir"] {
@@ -5,13 +8,5 @@ $base-fonts: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sa
         font-family: 'Vazir', $base-fonts;
     }
 
-    --font-family-sans: 'Vazir', $base-fonts;
-}
-
-[data-font="Shabnam"] {
-    &, button {
-        font-family: 'Shabnam', $base-fonts;
-    }
-
-    --font-family-sans: 'Shabnam', $base-fonts;
+    --font-family-sans: 'Vazir', #{meta.inspect($base-fonts)};
 }

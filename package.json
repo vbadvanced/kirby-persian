@@ -1,24 +1,32 @@
 {
   "scripts": {
-    "dev": "parcel watch src/index.js --no-source-maps -d ./",
-    "build": "parcel build src/index.js --no-source-maps --experimental-scope-hoisting -d ./"
-  },
-  "posthtml": {
-    "recognizeSelfClosing": true
+    "dev": "parcel watch src/index.js --no-source-maps -d ./ --public-url=/media/plugins/vbadvanced/kirby-persian/fonts",
+    "build": "parcel build src/index.js --no-source-maps --experimental-scope-hoisting -d ./ --public-url=/media/plugins/vbadvanced/kirby-persian/fonts"
   },
   "devDependencies": {
     "@vue/component-compiler-utils": "^3.2.0",
     "cssnano": "^4.1.10",
     "dayjs": "^1.8.22",
+    "parcel-plugin-custom-dist-structure": "^1.1.16",
     "sass": "^1.26.11",
     "shabnam-font": "^5.0.0",
     "vazir-font": "^26.0.2",
     "vue-template-compiler": "^2.6.12"
   },
   "dependencies": {
-    "jalaliday": "^2.3.0",
-    "vue": "^2.6.12",
-    "vue-hot-reload-api": "^2.3.4",
-    "vuelidate": "^0.7.5"
+    "jalaliday": "^2.3.0"
+  },
+  "customDistStructure": {
+    "config": {
+      "assets/fonts": [
+        ".ttf",
+        ".eot",
+        ".woff",
+        ".woff2"
+      ]
+    },
+    "options": {
+      "development": true
+    }
   }
 }
